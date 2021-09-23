@@ -19,8 +19,8 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.5.0</version>
                 <configuration>
-                    <encoding>UTF-8</encoding>
-                    <mainClass>websocket.WsServer</mainClass>
+                    <!--<encoding>UTF-8</encoding>-->
+                    <mainClass>mqtt.BootNettyApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
