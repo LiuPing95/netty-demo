@@ -1,4 +1,4 @@
-package client;
+package netty.client;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;

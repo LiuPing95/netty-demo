@@ -1,4 +1,4 @@
-package server;
+package netty.server;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
@@ -39,12 +39,12 @@ public class ChatServer
             // Bind and start to accept incoming connections.
             ChannelFuture channelFuture = b.bind(port).sync();
 
-            // Wait until the server socket is closed.
+            // Wait until the netty.server socket is closed.
             // In this example, this does not happen, but you can do that to gracefully
-            // shut down your server.
-            System.out.println("server is started");
+            // shut down your netty.server.
+            System.out.println("netty.server is started");
             channelFuture.channel().closeFuture().sync();
-            System.out.println("server is stop");
+            System.out.println("netty.server is stop");
         }
         finally
         {

@@ -1,4 +1,4 @@
-package server;
+package netty.server;
 
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelHandlerContext;
@@ -8,11 +8,9 @@ import io.netty.channel.group.DefaultChannelGroup;
 import io.netty.util.concurrent.GlobalEventExecutor;
 
 import java.net.SocketAddress;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
- * Handles a server-side channel.
+ * Handles a netty.server-side channel.
  */
 public class ChatServerHandler extends SimpleChannelInboundHandler<String>
 {
